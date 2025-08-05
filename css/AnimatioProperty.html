@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Property</title>
+    <style>
+        .one , .two{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background-color: chocolate;
+            animation-name: newAnimation;
+            animation-duration: 10s;
+            
+        }
+        @keyframes newAnimation{
+            from{background-color:burlywood; transform: rotate(180deg);}
+            to{background-color: chartreuse;border-radius: 50%; background-image: linear-gradient(to top left, rgb(45, 166, 206), rgb(243, 243, 71))}
+        }
+        .sec1{
+            display: flex;
+            justify-content: center;
+        }
+
+        .sec2{
+            display: flex;
+            justify-content: center;
+        }
+
+        .three , .four{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background-color: midnightblue;
+            animation-name: newAnimation2;
+            animation-duration: 7s;
+            
+        }
+
+        @keyframes newAnimation2{
+            0%{background-color: aquamarine;border-radius: 50%;}
+            25%{background-color: blue;border-radius: 40%;}
+            50%{background-color: palevioletred;border-radius: 30%;}
+            75%{background-color: magenta;border-radius: 20%;}
+            100%{background-color: maroon;border-radius: 10%;}
+
+
+        }
+
+        .sec3{
+            height: 100px;
+            width: 100px;
+            background-color: midnightblue;
+            position: relative;
+            animation: newAnimation3 5s infinite;
+            animation-direction: reverse;
+           
+        }
+
+        @keyframes newAnimation3{
+            0%{background-color: aquamarine;border-radius: 0%;   top:0px;left: 0px;}
+            25%{background-color: blue;border-radius: 12%;transform: rotate(360deg);top:0px;left: 600px;}
+            50%{background-color: palevioletred;border-radius: 30%;transform: rotate(360deg);top:600px;left: 600px;}
+            75%{background-color: magenta;border-radius: 40%;transform: rotate(360deg);top:600px;left: 0px;}
+            100%{background-color: maroon;border-radius: 50%;transform: rotate(360deg);top:0px;left: 0px;}
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sec1">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+    <div class="sec2">
+            <div class="three"></div>
+            <div class="four"></div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="sec3"></div>
+   
+
+
+</body>
+</html>

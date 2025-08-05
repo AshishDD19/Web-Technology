@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <title>Position Property</title>
+    <style>
+
+
+        /* absolute */
+        .parent{
+            border: 2px dashed brown;
+            width: 500px;
+            display: flex;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+        }
+
+        .child{
+            height: 200px;
+            width: 200px;
+            background-color: violet;
+            margin: 10px;
+
+        }
+
+        #box2{
+            background-color: aquamarine;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+
+
+        /* relative */
+
+        .parent1{
+            border: 2px dashed brown;
+            width: 500px;
+            display: flex;
+            position: absolute;
+            top: 600px;
+            
+        }
+
+        .child1{
+            height: 200px;
+            width: 200px;
+            background-color: violet;
+            margin: 10px;
+
+        }
+
+        #box3{
+            background-color: aquamarine;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+
+        .iconPosition{
+            height: 400px;
+            width: 400px;
+            border: 5px dashed purple;
+            position: absolute;
+            left: 700px;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 30px;
+        }
+
+        .iconPosition input{
+            height: 50px;
+            width: 300px;
+            margin: 20px;
+        }
+
+        .icon{
+            position: relative;
+            top:60px;
+            right: 150px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <h2>absolute position</h2>
+        <div class="child"></div>
+        <div class="child" id="box2"></div>
+        <div class="child"></div>
+        
+    </div>
+
+    
+    <div class="parent1">
+        <h2>relative position</h2>
+        <div class="child1"></div>
+        <div class="child1" id="box3"></div>
+        <div class="child1"></div>
+        
+    </div>
+
+    <div class="iconPosition">
+       <i class="fa-solid fa-magnifying-glass icon" ></i> <input type="text">
+       <i class="fa-regular fa-envelope icon"></i> <input type="email" name="" id="">
+
+    </div>
+    
+</body>
+</html>

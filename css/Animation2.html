@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+    <style>
+        .sec1{
+            height: 200px;
+            width: 200px;
+            margin: 50px auto;
+            background-color: cadetblue;
+            position: relative;
+            animation: anim1 3s infinite;
+            
+        }
+
+        .sec2{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 150px;
+        }
+
+        .one,.two{
+            height: 200px;
+             width: 200px;
+            background-color: cadetblue;
+            position: relative;
+        }
+
+        .one{
+           animation: anim2 3s infinite;
+        }
+
+        .two{
+            animation: anim3 3s infinite;
+        }
+
+        .sec1,.one,.two{
+            animation-direction:alternate;
+        }
+
+        @keyframes anim1{
+            to{background-color: rgb(255, 187, 180);transform: translateY(350px);border-radius: 50%;}
+        }
+
+        @keyframes anim2{
+            to{background-color: rgb(255, 187, 180);transform: translateX(660px);border-radius: 50%;}
+        }
+
+        @keyframes anim3{
+            to{background-color: rgb(255, 187, 180);transform: translateX(-660px);border-radius: 50%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="sec1"></div>
+
+    <div class="sec2">
+        <div class="one"></div>
+        <div class="two"></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Property</title>
+
+    <style>
+        body{
+            width: 100%;
+            /* height: 200vh; */
+            background-image: linear-gradient(to top left, rgb(45, 166, 206), rgb(243, 243, 71));
+        }
+        .linear{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background: repeating-linear-gradient( red 10%, yellow 30% , green 70%);
+        }
+
+        .linear1{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background: linear-gradient(to right, red, yellow, green, blue);
+        }
+
+        .linear2{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background: linear-gradient(to bottom right, red, yellow, green, blue);
+        }
+
+
+        .radial{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background: radial-gradient(red, yellow, green, blue);
+
+        }
+
+        .radial1{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background: radial-gradient(circle, red, yellow, green, blue);
+
+        }
+
+        .radial2{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background: repeating-radial-gradient( red, yellow, green 10%, blue 30%);
+
+        }
+
+
+                
+
+
+        .conic{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background: conic-gradient(red, yellow, green, blue);
+
+        }
+
+        .conic1{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background: conic-gradient(red 0deg,orange 30deg, yellow 90deg, green 180deg,   blue 300deg);
+            border-radius: 50%;
+        }
+
+        
+        .conic2{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+            background:repeating-conic-gradient(red, yellow 10%, green 15%);
+             
+        }
+    </style>
+</head>
+<body>
+    <h1>Lineat Gradient</h1>
+    <div class="linear">
+    </div>
+    <div class="linear1">
+    </div>
+     <div class="linear2">
+    </div>
+<hr>
+<br>
+    <h1>Radial Gradient</h1>
+    <div class="radial"></div>
+    <div class="radial1"></div>
+    <div class="radial2"></div>
+
+<hr>
+<br>
+
+    <h1>Conic Gradient</h1>
+    <div class="conic"></div>
+    <div class="conic1"></div>
+    <div class="conic2"></div>
+
+
+</body>
+
+</html>

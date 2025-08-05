@@ -1,0 +1,43 @@
+/* simple selectors */
+
+h1{
+    color: red;
+    background-color: yellow;
+    border: 5px dotted orange;
+}
+
+p{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-style: italic;
+}
+
+button{
+    color: red;
+    border: 2px dashed red;
+}
+body{
+    background-color: grey;
+}
+
+
+
+/* id selectors */
+#one{
+    color: greenyellow;
+    background-color: blue;
+}
+
+#two{
+    color: chocolate;
+    background-color: turquoise;
+}
+
+#a1{
+    border: 2px solid black;
+}
+
+#a2{
+    border: 2px dotted rebeccapurple;
+}

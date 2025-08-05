@@ -1,0 +1,180 @@
+/* id selectors */
+#one{
+    color: greenyellow;
+    background-color: blue;
+}
+
+#two{
+    color: chocolate;
+    background-color: turquoise;
+}
+
+#a1{
+    border: 2px solid black;
+}
+
+#a2{
+    border: 2px dotted rebeccapurple;
+}
+
+
+/* class selectors */
+.one1{
+    color: red;
+    background-color: yellow;
+    border: 5px solid green;
+}
+
+.three3{
+    color: orange;
+    background-color: greenyellow;
+    border: 5px solid blueviolet;
+}
+
+.two2{
+    font-style: italic;
+}
+
+/* universal selector */
+
+/* *{
+    background-color: wheat;
+} */
+
+
+/* grouping selectors */
+
+#th,.p2{
+    color: greenyellow;
+    background-color: aquamarine;
+}
+
+p,b{
+    border: 5px solid gold;
+}
+
+#head1,b{
+    background-color: grey;
+}
+
+.div1,h2{
+    background-color: pink;
+}
+
+.div1,.div2{
+    border: 5px solid violet;
+}
+
+/* pseudo class selectors */
+
+    /* 1. link */
+    #link1:link{
+        color: green;
+        text-decoration: none;
+    }
+
+    .btn1:link{
+        color: orangered;
+        text-decoration: overline;
+    }
+
+    /* 2. hover */
+    #link2:hover{
+        color: red;
+        background-color: yellowgreen;
+
+    }
+
+    .btn2:hover{
+        cursor: pointer;
+        background-color: grey;
+        color: green;
+        border: none;
+        height: 50px;
+        width: 100px;
+
+    }
+
+
+    /* 3. active  */
+
+    #link3:active{
+        color:pink;
+        background-color: orange;
+        text-decoration: none;
+    }
+    .btn3:active{
+        color: red;
+        background-color: pink;
+        border: none;
+        height: 30px;
+        width: 70px;
+
+    }
+
+    /* 4. visited  */
+    #link4:visited{
+        color: orangered;
+        text-decoration: none;
+        background-color: black ;
+    }
+
+
+/* Adjacent selectors */
+ol li{
+    color: red;
+    text-decoration: underline;
+    list-style: none;
+}
+
+ul li{
+    color: greenyellow;
+    border: 2px solid orangered;
+    background-color: brown;
+    list-style: none;
+}
+
+.sec1 h3{
+    color: tomato;
+}
+
+.sec1 p{
+    color: wheat;
+    background-color: blue;
+}
+
+.sec2 h3{
+    color: magenta;
+}
+
+.sec2 p{
+    color: wheat;
+    background-color:maroon;
+}
+
+
+/* Attribute selector  */
+
+a[href]{
+    color: olivedrab;
+}
+
+a[href^="https"]{
+    background-color: turquoise;
+}
+
+a[href$=".in"]{
+    border: 2px dotted red;
+}
+
+input[placeholder]{
+    background-color: pink;
+}
+
+input[type]{
+    border: none;
+}
+
+input[type=submit]{
+    background-color: violet;
+}
