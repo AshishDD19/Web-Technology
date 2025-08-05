@@ -1,0 +1,135 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: "Outfit", sans-serif;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 113, 113);
+}
+   
+header a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 0 20px;
+    font-size: large;
+}
+
+
+main{
+     background-image:linear-gradient(to bottom left , rgb(238, 113, 113)  , rgb(234, 234, 141)  );
+
+
+}
+/* section 1 */
+
+
+.section1{
+    display: flex;  
+    height: 670px;
+    
+}
+
+.txt{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    
+}
+
+.txt h1{
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.txt p{
+    text-align: justify;
+}
+.img img{
+    width: 100%;
+    height: 670px;
+}
+
+#btn1{
+    border: none;
+    color: white;
+    background-color: rgb(238, 113, 113);
+    height: 50px;
+    width: 220px;
+    margin-top: 50px;
+}
+
+#btn1:hover{
+    background-color: rgb(236, 56, 56);
+    cursor: pointer;
+}
+
+
+/* section 2 */
+.section2{
+    display: flex;
+    /* justify-content: space-evenly; */
+    height: 670px;
+    align-items: center;
+}
+
+.images{
+    width: 50%;
+    display: flex;
+    margin-right: 0;
+    margin-left: 60px;
+}
+
+.images div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0 20px;
+}
+
+.images img{
+    margin-top: 15px;
+}
+
+
+.txt2{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(238, 113, 113);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+    margin-left: 0;
+    margin-right: 100px;
+    
+    
+}
+.txt2 h1{
+    margin: 0;
+    font-size: 50px;
+    letter-spacing: 5px;
+}  
+.txt2 p{
+    margin-top: 0;
+} 
+
+.txt2 a{
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+}

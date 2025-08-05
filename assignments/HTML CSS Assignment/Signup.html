@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        header,
+        footer {
+            height: 60px;
+            width: 100%;
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-top: 0;
+            padding: 10px;
+        }
+
+        footer h2 {
+            padding: 10px;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        main {
+            height: 920px;
+            width: 400px;
+            box-shadow: 0px 0px 10px black;
+            margin: 80px auto;
+            border-radius: 10px;
+            padding: 20px;
+            /* text-align: center; */
+        }
+
+
+        .inputfield {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            font-size: large;
+
+        }
+
+        #txtbox {
+            height: 30px;
+            width: 350px;
+            /* margin: 10px; */
+            border-top-style: none;
+            border-right-style: none;
+            border-left-style: none;
+            outline: none;
+        }
+
+        .inputfieldGender,
+        .inputfieldDate,
+        .inputfieldSelect,
+        .inputfieldImg,
+        .inputfieldCity {
+            display: flex;
+
+            padding: 10px;
+            font-size: large;
+        }
+
+        .inputfieldGender input {
+            margin-left: 20px;
+        }
+
+        .inputfieldDate input,
+        .inputfieldSelect select {
+            margin-left: 20px;
+            width: 100px;
+
+        }
+
+        .inputfieldCity select {
+            width: 100px;
+            margin-left: 30px;
+        }
+
+        .inputfieldImg input {
+            margin-left: 9px;
+        }
+
+        .inputfield2 {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .inputfield2 input {
+            margin-left: 10px;
+        }
+
+        .btn {
+            margin: 20px;
+            text-align: center;
+
+        }
+
+        button {
+            height: 40px;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            font-size: larger;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .txt {
+            margin-left: 10px;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Signup Page</h1>
+    </header>
+    <main>
+        <form action="">
+            <div class="heading">
+                <h1>Create an account</h1>
+            </div>
+            <div class="inputfield">
+                <label>First Name: </label>
+                <input type="text" name="First Name" required id="txtbox">
+            </div>
+
+            <div class="inputfield">
+                <label>Last Name: </label>
+                <input type="text" name="Last Name" id="txtbox">
+            </div>
+
+            <div class="inputfieldDate">
+                <Label>Date of Birth: </Label>
+                <input type="date" name="Date Of birth" required>
+            </div>
+
+            <div class="inputfield">
+                <label>Email: </label>
+                <input type="email" name="Email" required id="txtbox">
+            </div>
+
+            <div class="inputfield">
+                <label>Password: </label>
+                <input type="password" name="Password" required id="txtbox">
+            </div>
+
+            <div class="inputfieldGender">
+                <label>Gender: </label>
+                <input type="radio" name="Gender" value="Male">Male
+                <input type="radio" name="Gender" value="Female">Female
+            </div>
+
+            <div class="inputfield">
+                <label>Address: </label>
+                <textarea name="Address" rows="5"></textarea>
+            </div>
+
+            <div class="inputfield">
+                <label>Pincode: </label>
+                <input type="text" name="Pincode" id="txtbox">
+            </div>
+
+            <div class="inputfieldSelect">
+                <label>Select State: </label>
+                <select name="Select State">
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Andra Pradesh">Andra Pradesh</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                </select>
+            </div>
+
+            <div class="inputfieldCity">
+                <label>Select City: </label>
+                <select name="Select City">
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Mysore">Mysore</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Hyderbad">Hyderbad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kochi">Kochi</option>
+                </select>
+            </div>
+
+            <div class="inputfieldImg">
+                <label>Upload Image: </label>
+                <input type="file" name="Upload Image">
+            </div>
+
+            <div class="inputfield2">
+                <input type="checkbox" name="Terms and condition" required>
+                <label>Accept terms and conditions.</label>
+            </div>
+
+            <div class="btn">
+                <button>Signup</button>
+            </div>
+
+            <div class="txt">
+                <p>Already have an account? <a href="LoginPage.html">Click here</a> to Login</p>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <h2>&copy; Copyrights 2025</h2>
+    </footer>
+</body>
+
+</html>

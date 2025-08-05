@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Signup Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        *{
+            font-family: "Outfit", sans-serif;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url("photo_6258206871911516135_x.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+
+        .back {
+            height: 540px;
+            width: 1000px;
+            background-color: white;
+            margin: 100px auto;
+            border-radius: 15px;
+            display: flex;
+
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        .back img {
+            border-radius: 15px;
+        }
+
+        .details {
+            /* width: 500px; */
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .logo{
+            display: flex;
+            margin-left: 55px;
+        }
+        .logo h1 {
+            font-size: 50px;
+            margin-top: 0;
+        }
+        #txt1{
+            color: rgb(22, 142, 182);
+        }
+        #txt2{
+            color: rgb(204, 19, 19);
+        }
+        .btn1{
+        
+            display: flex;
+            justify-content: center;
+        }
+
+        #login, #signup {
+            /* width: 150px; */
+            height: 35px;
+            border-radius: 5px;
+            border: none;
+           
+
+        }
+
+        #login {
+            background-color:rgb(224, 225, 225);
+            color: black;
+            width: 160px;
+            cursor: pointer;
+
+
+           
+            
+        }
+        #signup {
+            background-color: rgb(204, 19, 19);
+            color: white;
+            width: 155px;
+            position: relative;
+            right: 10px;
+
+            
+        }
+
+        
+        .details label {
+            margin: 20px 0 5px 10px;
+            
+        }
+
+        .details input {
+            height: 45px;
+            width: 320px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(224, 225, 225);
+            outline: none;
+            margin-left: 10px;
+            padding-left: 20px;
+            color: rgba(179, 178, 178, 0.737);
+        }
+        .phno{
+            margin-right: 20px;
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        .phno select, .phno input {
+            
+            border-radius: 5px;
+            background-color: rgb(224, 225, 225);
+            border: none;
+            outline: none;
+            
+        }
+
+        .phno select {
+            position: relative;
+            left: 15px;
+            height: 34px;
+            width: 50px;
+            padding-left:10px ;
+            color: rgba(179, 178, 178, 0.737);
+            
+        }
+
+        .phno input {
+            height: 32px;
+            width: 275px;
+            padding-left: 20px;
+            /* margin-right: 10px; */
+        }
+
+        .btn2{
+            height: 40px;
+            width: 350px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(204, 19, 19);
+            color: white;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .symbol {
+            position: relative;
+            left: 220px;
+            bottom: 10px;
+            color: rgb(204, 19, 19);
+            font-size: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+       
+        <img src="photo_6258206871911516134_x.jpg" alt="">
+
+        <div class="details">
+             <i class="fa-solid fa-circle-xmark symbol"></i>
+            <div class="logo">
+                <h1 id="txt1">Car</h1>
+                <h1 id="txt2">space</h1>
+            </div>
+
+            <div class="btn1">
+                <a href="loginPage.html"><button id="login">Login</button></a>
+                <button id="signup">Sign Up</button>
+
+            </div>
+            <label for="">Enter your Name</label>
+            <input type="text" name="" placeholder="Enter your Name" required>
+            <label for="">Enter your Email</label>  
+            <input type="email" name="" placeholder="Enter your Email" required>
+            <label for="">Enter your Mobile Number</label>
+            <div class="phno">
+                <select name="phoneid">
+                    <option value="+91">+91</option>
+                    <option value="+001">+001</option>
+                    <option value="+81">+81</option>
+                    <option value="+1">+1</option>
+                    <option value="+09">+09</option>
+                </select>
+                <input type="text" name="">
+            </div>
+            <button class="btn2">Continue</button>
+            
+        </div>
+    </div>
+</body>
+</html>

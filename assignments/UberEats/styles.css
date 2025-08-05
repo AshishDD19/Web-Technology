@@ -1,0 +1,404 @@
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        *{
+            font-family: "Montserrat", sans-serif;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* header  */
+        header{
+            width: 100%;
+            display: flex;
+            background-color:transparent; /* rgba(238, 180, 72, 0.753) */
+            justify-content: space-between;
+            position: fixed;
+        }
+        .heading1{
+            display: flex;
+            font-size: large;
+            
+        }
+        .heading1 h3{
+            margin-left: 3px;
+        }
+        #name{
+            font-weight: 500;
+        }
+        .navicon{
+            height: 45px;
+            width: 45px;
+            margin: 11px  0px 0 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navicon:hover{
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .heading2{
+            display: flex;
+            font-size: large;
+        }
+        .heading2 a{
+            display: flex;
+            text-decoration: none;
+            color: black;
+            margin-right:20px ;
+            margin-top: 5px;
+        }
+        .heading2 p{
+            font-size: 15px;
+            font-weight: bold;
+            margin: 20px 0px 0 10px;
+        }
+        .arrowicon{
+            margin: 22px 10px 0 10px;
+            font-size: 15px;
+        }
+        #loginbtn, #signupbtn{
+            height: 40px;
+            width: 70px;
+            border-radius: 50px ;
+            border: none;
+            font-weight: 600;
+            
+        }
+        #loginbtn{
+            background-color: white;
+            color: black;
+            margin: 12px 10px 0 10px;
+        }
+        #signupbtn{
+            background-color: black;
+            color: white;
+            margin: 12px 40px 0 5px;
+        }
+
+        #loginbtn:hover{
+            background-color: rgb(234, 233, 233);
+            cursor: pointer;
+        }
+        #signupbtn:hover{
+            background-color: rgb(39, 39, 39);
+            cursor: pointer;
+        }
+
+
+        /* main  */
+        
+        /* section 1 */
+        .section1{
+            background-image: url("bgimg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height:100vh;
+            display: flex;
+            flex-direction: column; 
+            /* align-items: center; */
+            justify-content: center;
+            
+        }
+
+        #txt1 h1{
+            margin-top: 0;
+            font-size: 50px;
+            margin-left: 35px;
+            margin: 0 0 7px 35px;
+        }
+        .searchbar{
+            display: flex;
+            margin-top: 20px;
+            margin-left: 35px;
+        }
+
+        .searchbar input{
+            height: 50px;
+            width: 400px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            outline: none;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        #menubar{
+            width: 150px;
+            background-color: white;
+            font-size: 15px;
+            font-weight: bolder;
+            text-align: center;
+            border: none;
+            outline: none;
+            margin-right: 10px;
+            
+        }
+        #menubar option{
+            height: 70px;
+            width: 150px;
+            background-color: white;
+            font-size: 15px;
+            
+
+        }
+        #searchbtn{
+            width: 150px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #searchbtn:hover{
+            background-color: rgb(18, 18, 18);
+            cursor: pointer;
+        }
+
+        .section1 p{
+            margin-left: 35px;
+            font-size: small;
+            font-weight: 600;
+        }
+        .section1 p a{
+            color: black;
+        }
+
+
+        /* section 2 */
+        .section2{
+           
+            display: flex;
+            justify-content: space-evenly;
+            margin: 80px 0 150px 0;
+
+        }
+        .imgcards img{
+            width: 450px;
+            height: 250px;
+        }
+        .imgcards h2{
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+        .imgcards a{
+            
+            color: black;
+            text-decoration: underline 1px solid black;
+        }
+        .imgcards a p{
+            margin-top: 5px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+
+        /* section 3 */
+
+        .section3{
+            margin: 80px 40px 20px 40px;
+        }
+
+        .txt3{
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            
+        }
+
+        .txt3 a{
+            color: black;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        .map{
+            margin-top: 20px;
+        }
+        .map iframe{
+            width: 100%;
+            
+        }
+         .citynames{
+            display: flex;
+            
+        }
+        .citylist{
+            width:500px;
+            margin-right: 100px;
+            
+            
+        }   
+        .citylist a{
+            color: black;
+            text-decoration: none;
+            line-height: 200%;
+        }
+
+
+
+        /* section 4 */
+        .section4{
+            margin: 20px 40px 60px 40px;
+        }
+
+        .txt2{
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            
+        }
+
+        .txt2 a{
+            color: black;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        .countrynames{
+            display: flex;
+            
+        }
+        .countrylist{
+            width:500px;
+            margin-right: 100px;
+            
+            
+        }   
+        .countrylist a{
+            color: black;
+            text-decoration: none;
+            line-height: 200%;
+        }
+
+
+
+        /* footer  */
+        footer{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .footerheading{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            
+        }
+        .footerlogo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+        
+        .logoicon{
+            display: flex;
+        }
+        .logoicon h1{
+            margin-left: 2px;
+        }
+
+        .appicons{
+            margin-bottom: 20px;
+        }
+
+        .appicons img{
+            width: 150px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+
+        .flinks{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .linklist{
+            
+            margin-right: 110px;
+        }
+
+
+        .linklist a{
+            color: black;
+            text-decoration: none;
+            line-height: 200%;
+        }
+        .linklist a:hover{
+            text-decoration: underline 1px solid black;
+        }
+        #translate{
+            display: flex;
+        }
+        #translate p{
+            margin-top: 0;
+        }
+        .linklist img{
+            width: 13px;
+            height: 13px;
+            margin: 10px 5px 0 0;
+        }
+
+
+        .footer1{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .footerLinks{
+            display: flex;
+            margin-bottom:0;
+        }
+        .footerLinks a{
+            margin-left: 35px;
+        }
+
+        .footer2{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 0;
+            margin-bottom: 75px;
+            
+        }
+        .footer2 p{
+            margin-left: 35px;
+            margin-top: 0;
+            
+        }
+
+        .footer1 a, .footer2 a{
+
+            text-decoration: none;
+            color: black;
+
+        }
+        .footer1 a:hover, .footer2 a:hover{
+            text-decoration: underline 1px solid black;
+        }
+
+        .icons{
+            margin: 10px 0;
+        }
+        .icons a{
+            font-size: 20px;
+            color: black;
+            margin-right: 10px;
+        }
+        .footerLinks p, .footer2 p{
+            font-size: 13px;
+        }
+        
+
+        

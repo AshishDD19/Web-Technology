@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Practice</title>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+        }
+
+        .parent1{
+            border: 3px solid black;
+            display: flex;
+
+        }
+        #child1{
+            height: 100px;
+            width: 100px;
+            margin: 3px;
+            align-content: center;
+            text-align: center;
+            background-color: lightsalmon;
+        }
+
+        .parent2{
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #child2{
+            height: 80px;
+            background-color: lightseagreen;
+            margin: 3px;
+            align-content:center ;
+            padding-left: 10px;
+        }
+
+
+        .parent3{
+            border: 3px solid black;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        #child3{
+            height: 100px;
+            width: 100px;
+            margin: 3px;
+            align-content: center;
+            text-align: center;
+            background-color: lightslategrey;
+        }
+
+        .parent4{
+            width: 30%;
+            border: 3px solid black;
+           
+        }
+
+        #child4{
+            height: 100px;
+            width: 150px;
+            margin: 5px;
+            text-align: center;
+            background-color:navajowhite;
+        }
+
+
+        .parent5{
+            height: 400px;
+            display: flex;
+            border: 3px solid black;
+            align-Items: center;
+        }
+
+        #child5{
+            height: 100px;
+            width: 150px;
+            background-color:mediumturquoise;
+            align-content: center;
+            text-align: center;
+        }
+
+
+        .parent6{
+            display: flex;
+            border: 3px solid black;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        #child6{
+            height: 100px;
+            width: 150px;
+            margin: 5px;
+            text-align: center;
+            align-content: center;
+            color: white;
+            background-color:red;
+        }
+
+
+        .parent7{
+            height: 500px;
+            display: flex;
+            border: 3px solid black;
+            flex-direction: column;
+            align-Items: center;
+            justify-content: center;
+        }
+
+        #child7{
+            height: 100px;
+            width: 150px;
+            margin: 5px;
+            text-align: center;
+            align-content: center;
+            background-color:peru;
+        }
+
+        .parent8{
+            display: flex;
+            border: 3px solid black;
+        }
+
+        .parent9{
+            width: 50%;
+            display: flex; 
+            justify-content: center;
+        }
+        .parent10{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #child8{
+            height: 100px;
+            width: 100px;
+            margin: 3px;
+            text-align: center;
+            align-content: center;
+            background-color: forestgreen;
+        }
+
+
+        .parent11{
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-Items: center;
+            border: 3px solid black;
+        }
+        
+        #child9{
+            height: 100px;
+            width: 150px;
+            text-align: center;
+            align-content: center;
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent1">
+        <div id="child1">Item 1</div>
+        <div id="child1">Item 2</div>
+        <div id="child1">Item 3</div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+    <div class="parent2">
+        <div id="child2">Item 1</div>
+        <div id="child2">Item 2</div>
+        <div id="child2">Item 3</div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="parent3">
+        <div id="child3">Item 1</div>
+        <div id="child3">Item 2</div>
+        <div id="child3">Item 3</div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="parent4">
+        <div id="child4">Item 1</div>
+        <div id="child4">Item 2</div>
+        <div id="child4">Item 3</div>
+        <div id="child4">Item 4</div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="parent5">
+        <div id="child5">Item 1</div>
+        <div id="child5">Item 2</div>
+        <div id="child5">Item 3</div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="parent6">
+        <div id="child6">Item 1</div>
+        <div id="child6">Item 2</div>
+        <div id="child6">Item 3</div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+    <div class="parent7">
+        <div id="child7">Item 1</div>
+        <div id="child7">Item 2</div>
+        <div id="child7">Item 3</div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+    <div class="parent8">
+        <div class="parent9">
+            <div id="child8">A</div>
+            <div id="child8">B</div>
+        </div>
+
+        <div class="parent10">
+            <div id="child8">C</div>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="parent11">
+        <div id="child9">Centered</div>
+    </div>
+
+</body>
+</html>

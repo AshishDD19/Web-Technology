@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>OTP Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        *{
+            font-family: "Outfit", sans-serif;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url("photo_6258206871911516135_x.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+
+        .back {
+            height: 540px;
+            width: 1000px;
+            background-color: white;
+            margin: 100px auto;
+            border-radius: 15px;
+            display: flex;
+
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        .back img {
+            border-radius: 15px;
+        }
+
+        .details {
+            /* width: 500px; */
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .logo{
+            display: flex;
+            margin-left: 55px;
+        }
+        .logo h1 {
+            font-size: 50px;
+        }
+        #txt1{
+            color: rgb(22, 142, 182);
+        }
+        #txt2{
+            color: rgb(204, 19, 19);
+        }
+
+        h2{
+            margin-bottom: 0;
+        }
+        p{
+            color: rgba(179, 178, 178, 0.737);
+                  
+        }
+
+        #time{
+            margin-bottom: 0px;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        a:hover{
+            text-decoration: underline solid gray;
+            
+        }
+        a p{
+            margin-top: 0;
+        }
+        .otp{
+            display: flex;
+              
+        }
+        input{
+            height: 30px;
+            width: 30px;
+            background-color: rgba(214, 214, 214, 0.688);;
+            margin-right: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        .btn2{
+            height: 40px;
+            width: 350px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(204, 19, 19);
+            color: white;
+            cursor: pointer;
+            /* margin-left: 10px; */
+        }
+
+        .symbol {
+            position: relative;
+            left: 220px;
+            bottom: 10px;
+            color: rgb(204, 19, 19);
+            font-size: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+       
+        <img src="photo_6258206871911516134_x.jpg" alt="">
+
+        <div class="details">
+             <i class="fa-solid fa-circle-xmark symbol"></i>
+            <div class="logo">
+                <h1 id="txt1">Car</h1>
+                <h1 id="txt2">space</h1>
+            </div>
+            <h2>Verify your Mobile</h2>
+            <p>We have sent A 5 Digit OTP on +91 0000000000</p>
+            <div class="otp"> 
+                <input type="text" size="1"> <input type="text" size="1"> <input type="text" size="1"> <input type="text" size="1">
+            </div>
+            <p id="time">00 : 20</p>
+            <a href="#"><p>Didn't receive OTP?</p></a>
+           
+
+
+            <a href="loginPage.html"><button class="btn2">Login</button></a>   
+            
+        </div>
+    </div>
+</body>
+</html>
