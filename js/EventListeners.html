@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+    <style>
+        #div1{
+            position: relative;
+            display: flex;
+            animation: demo 3s infinite;
+            animation-direction: alternate;
+
+        }
+            @keyframes demo {
+                from{left: 0px;}
+                to{left: 100%;}
+            }
+
+        
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <button id="btn">Click</button>
+</body>
+</html>
+<script>
+    const doc = document.getElementById("btn")
+    const doc2 = document.getElementById("div1")
+    doc.addEventListener("click",()=>{
+        const ele1 = document.createElement("div")
+        ele1.innerText = "YO!"
+        ele1.style.height = "100px"
+        ele1.style.width = "100px"
+        ele1.style.color = "brown"
+        ele1.style.textAlign = "center"
+        ele1.style.backgroundColor = "gold"
+        ele1.style.border = "3px solid black"
+        ele1.style.margin = "10px"
+        document.body.appendChild(ele1)
+
+        ele1.addEventListener("click",()=>{
+            const ele2 = document.createElement("div")
+            ele2.style.height = "150px"
+            ele2.style.width = "150px"
+            ele2.style.backgroundColor = "pink"
+            ele2.style.border = "2px solid black"
+            doc2.appendChild(ele2)
+
+        })
+        
+    })
+
+    doc.addEventListener("dblclick", ()=>{
+        alert("someone clicked");
+        
+    })
+</script>

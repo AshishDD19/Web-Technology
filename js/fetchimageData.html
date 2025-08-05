@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Image Data</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #div1{
+            margin-left: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100% ;
+            
+        }
+
+        img{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            border: 2px solid black;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fetching Images from API</h1>
+    <div id="div1"></div>
+</body>
+</html>
+<script>
+    var API_KEY = '51576020-8e009dd77c8380af3dc15e22d';
+    
+    var URL = "https://pixabay.com/api/?key="+API_KEY;
+    const doc1 = document.getElementById("div1")
+    fetch(URL)
+    .then((res)=>res.json())
+    .then((data)=>data.hits)
+    .then((data1)=>{
+        console.log(data1);
+        for(let i=0;i<data1.length;i++) {
+            const doc = document.createElement("div")
+            doc.innerHTML=`<img src = "${data1[i].previewURL}">`
+            doc1.appendChild(doc)
+        }
+        
+        
+    })
+
+</script>

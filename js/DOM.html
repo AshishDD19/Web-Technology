@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p id="name" >Hello Bhuvan</p>
+
+    <div class = "div1">Hello</div>
+    <div class ="div1">Hello</div>
+    <div class ="div1">Hello</div>
+
+
+    <h2>Welcome</h2>
+    <h2>Welcome</h2>
+    <h2>Welcome</h2>
+
+
+    <div class="item">Pentagon Space</div>
+    <div class="item">Pentagon Space</div>
+    <div class="item">Pentagon Space</div>
+
+    <div class="one">JavaScript</div>
+    <div class="one">JavaScript</div>
+    <div class="one">JavaScript</div>
+</body>
+</html>
+<script>
+
+    //using id selector
+    const ele = document.getElementById("name")
+    console.log(ele);
+
+    ele.innerText =  "Hello Bob"
+    ele.innerHTML = "<h1>Hello Bob</h1>"
+    ele.style.color = "gold"
+
+    //using class selector
+    const doc = document.getElementsByClassName("div1")
+    const img = "photo_6258206871911516134_x.jpg"
+
+    for (let i = 0; i < doc.length; i++) {
+        doc[i].innerHTML = "<h1>Welcome</h1>"
+        doc[i].style.color = "white"
+
+        doc[i].style.background = "blue";
+        doc[i].style.height = "150px"
+        doc[i].style.width = "250px"
+        doc[i].style.margin = "5px"
+        doc[i].style.border = "3px dashed black"
+        doc[i].style.backgroundImage = `url("${img}")` 
+        
+    }
+    doc[1].innerText = "Bye"
+
+    //using tag name selector
+    const doc1 = document.getElementsByTagName("h2")
+    console.log(doc1);
+    
+    for (let i = 0; i < doc1.length; i++) {
+        doc1[i].innerHTML ="<h4>Pentagon</h4>",
+        doc1[i].style.color = "green"
+        
+    }
+
+    //using querySelector
+    const doc2 = document.querySelector(".item")
+    doc2.innerHTML = "<h1>Hello</h1>"
+    doc2.style.color = "brown"
+
+
+
+    //using querySelectorAll
+    const doc3 = document.querySelectorAll(".one");
+    console.log(doc3);
+    for (let i = 0; i < doc3.length; i++) {
+        doc3[i].innerHTML = "<h2>Class</h2>"
+        doc3[i].style.color = "gold"
+        doc3[i].style.height = "100px"
+        doc3[i].style.width = "100px"
+        doc3[i].style.backgroundColor = "brown"
+        doc3[i].style.padding = "10px"
+        doc3[i].style.margin = "5px"
+        doc3[i].style.border = "3px solid black"
+
+
+
+    }
+    
+    
+</script>

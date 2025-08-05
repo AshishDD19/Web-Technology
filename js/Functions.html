@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Functions</h1>
+</body>
+</html>
+
+<script>
+    // named function
+    function add(){
+        let a= 10;
+        let b = 20;
+        console.log(a+b);
+        
+    }
+    add();
+
+    //parameterized function
+    function add1(a,b){
+        console.log(a+b)
+    }
+    add1(30,60);
+
+    // arrow function
+    const add2 = ()=>{
+        console.log("Arrow function");
+        
+    }
+    add2()
+
+    //anonymous function
+    const fun2 =  function (){
+        console.log("Anonymous function");
+        
+    }
+    fun2();
+
+    // Immediatly invoked function
+    const fun3 = (
+        function (){
+            console.log("IIFunction");
+            
+        }
+    )
+    fun3()
+    
+
+    // Asynchronous functions
+
+    setTimeout(() => {
+        console.log("set timeout");
+        
+    }, 5000);
+
+    setInterval(() => {
+        console.log("set interval");
+        
+    }, 2000);
+</script>

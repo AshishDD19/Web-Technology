@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+        #div1{
+            height: 300px;
+            width:300px;
+            background-color: brown;
+            border: 1px solid black;
+        }
+         #div2{
+            height: 200px;
+            width:200px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        #div3{
+            height: 100px;
+            width:100px;
+            background-color: blueviolet;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        Element 1
+        <div id="div2">
+            Element 2
+            <div id="div3">Element 3 </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function bubbling(){
+        const ele1 = document.getElementById("div1");
+        ele1.addEventListener("click",()=>{
+            console.log("element1 is clicked ");
+            
+        })
+
+        const ele2 = document.getElementById("div2");
+        ele2.addEventListener("click",()=>{
+            console.log("element2 is clicked ");
+            
+        })
+
+        const ele3 = document.getElementById("div3");
+        ele3.addEventListener("click",()=>{
+            console.log("element3 is clicked ");
+            
+        })
+    }
+    // bubbling();
+
+
+    function capturing(){
+        const ele1 = document.getElementById("div1");
+        ele1.addEventListener("click",()=>{
+            console.log("element1 is clicked ");    
+        },true)
+
+        const ele2 = document.getElementById("div2");
+        ele2.addEventListener("click",()=>{
+            console.log("element2 is clicked ");
+            
+        },true)
+
+        const ele3 = document.getElementById("div3");
+        ele3.addEventListener("click",()=>{
+            console.log("element3 is clicked ");
+            
+        },true)
+    }
+    // capturing();
+
+    function stoppropagation(){
+        const ele1 = document.getElementById("div1");
+        ele1.addEventListener("click",(event)=>{
+            event.stopPropagation();
+            console.log("element1 is clicked ");
+            
+        })
+
+        const ele2 = document.getElementById("div2");
+        ele2.addEventListener("click",(event)=>{
+            event.stopPropagation();
+            console.log("element2 is clicked ");
+            
+        })
+
+        const ele3 = document.getElementById("div3");
+        ele3.addEventListener("click",(event)=>{
+            event.stopPropagation();
+            console.log("element3 is clicked ");
+            
+        })
+    }
+    stoppropagation();
+</script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing element</title>
+    <style>
+        #div1 {
+             height: 300px;
+             width: 300px;
+             background-color: gold;
+             border: 3px solid black;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Removing the element</h1>
+    <div id="div1"></div>
+</body>
+</html>
+<script>
+    const doc2 = document.getElementById("div1")
+    const img = "photo_6258206871911516134_x.jpg"
+    const doc = document.createElement("div")
+    const txt = doc.innerText = "Hello Pentagon"
+    
+    doc.style.height = "150px"
+    doc.style.width = "150px"
+    doc.style.color = "white"
+    doc.style.border = "3px solid black"
+    doc.style.alignContent = "center"
+    doc.style.textAlign = "center"
+    doc.innerHTML = `<h2>${txt}</h2>`
+    doc.style.backgroundImage = `url("${img}")`
+
+    document.body.removeChild(doc)
+</script>

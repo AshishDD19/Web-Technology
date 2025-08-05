@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+   <h1>Objects</h1>   
+</body>
+</html>
+<script>
+    const Student = {
+        name : "Bob",
+        age : 24,
+        place : "Bengaluru",
+        greet : function(){
+            console.log("Hi, Welcome!");
+            
+        }
+    }
+
+    console.log(Student);
+    console.log(Student.name);
+    console.log(Student.age);
+    console.log(Student.place);
+    Student.greet()
+
+    Student.name = "Raj"
+    Student.age = 40
+    Student.place = "Mysore"
+    
+    console.log(Student);
+
+    delete Student.age;
+    console.log(Student);
+    
+    
+    const Student1 = {
+        name : "Bob",
+        age : 24,
+        place : "Bengaluru",
+        greet : function(game){
+            console.log(`Hi i am ${this.name} and I am from ${this.place}, i like ${game}`);
+            
+        }
+    }
+
+    Student1.greet("football")
+</script>

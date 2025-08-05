@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+</head>
+<body>
+    <h1>Keyboard Events</h1>
+    <label>Enter your name:</label>
+    <input type="text" placeholder="Enter your name" id="name">
+</body>
+</html>
+<script>
+    const doc = document.getElementById("name")
+    doc.addEventListener("keydown",(e)=>{
+        console.log(`key down ${e.key}`);
+        
+    })
+
+    doc.addEventListener("keyup",(e)=>{
+        console.log(`key up ${e.key}`);
+        
+    })
+
+    doc.addEventListener("keypress",(e)=>{
+        console.log(`key press ${e.key}`);
+        
+    })
+</script>
