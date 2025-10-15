@@ -1,0 +1,13 @@
+import React, { Component } from 'react'
+import './Navigation.css'
+export default class Navigation extends Component {
+  render() {
+    return (
+      <div>
+        <div className='nav'><h1 >Navigation</h1>
+        </div>
+      </div>
+    )
+  }
+}
+

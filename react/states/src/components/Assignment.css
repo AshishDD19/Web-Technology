@@ -1,0 +1,47 @@
+.section{
+    height: 200px;
+    width: 300px;
+    background-color: bisque;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+
+}
+
+.btn{
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 90px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 5px black;
+}
+.btn:hover {
+    background-color: rgb(226, 4, 4);
+    cursor: pointer;
+}
+
+.btnSec{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.bellIcon ,.bellIconTurn{
+    margin-top: 5px;
+    margin-left: 15px;
+    height: 25px;
+    transition: transform 0.5s;
+}
+.bellIcon:hover ,.bellIconTurn:hover{
+    color: rgb(72, 72, 72);
+    cursor: pointer;
+}
+
+.bellIconTurn{
+    transform: rotate(180deg);
+}
+    

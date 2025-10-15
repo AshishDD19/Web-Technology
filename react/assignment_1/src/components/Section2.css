@@ -1,0 +1,18 @@
+        .section2 {
+            background-color: lightgrey;
+            width: 100%;
+            /* height: ; */
+
+        }
+
+        .cards {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 40px auto;
+            padding: 0 25px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        

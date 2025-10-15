@@ -1,0 +1,32 @@
+.section1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    
+}
+
+.heading{
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.txt{
+    text-align: justify;
+}
+
+
+.btn1{
+    border: none;
+    color: white;
+    background-color: rgb(238, 113, 113);
+    height: 50px;
+    width: 220px;
+    margin-top: 50px;
+}
+
+.btn1:hover{
+    background-color: rgb(236, 56, 56);
+    cursor: pointer;
+}

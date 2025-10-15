@@ -1,0 +1,30 @@
+        .card{
+            padding: 20px;
+        }
+        .txt{
+            font-size: 12px;
+            font-weight: bold; 
+        }
+
+
+
+        .image {
+            width: 400px;
+            height: 200px;
+            border-radius: 5px;
+        
+        }
+
+        .btn{
+            height: 40px;
+            width: 150px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background-color: grey;
+            color: black;
+            cursor: pointer;
+        }

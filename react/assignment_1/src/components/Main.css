@@ -1,0 +1,10 @@
+        .main{
+            width: 100%;
+            height: 600px;
+            background-image: url("D:\web_tech\react\assignment_1\src\assets\heroimg.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items:flex-end;
+        }
