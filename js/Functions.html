@@ -31,7 +31,19 @@
         console.log("Arrow function");
         
     }
-    add2()
+    add2();
+
+    const funcA = (a,b)=>{
+        return a+b;
+    }
+
+    console.log(funcA(2,3));
+    
+    function funcB(f){
+        f()
+    }
+    funcB(()=>{console.log("Call backo");
+    })
 
     //anonymous function
     const fun2 =  function (){

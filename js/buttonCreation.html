@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Creation Using JS</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    function buttonCreate(){
+        let body = document.body;
+        let button = document.createElement('button');
+        button.innerHTML= "Click Me"
+        button.style.height = "50px"
+        button.style.width = "80px"
+        button.style.backgroundColor = "gold"
+        button.style.border = "1px solid brown"
+        button.style.color = "brown"
+
+        body.appendChild(button);
+    }
+    buttonCreate()
+    buttonCreate()
+
+
+</script>
