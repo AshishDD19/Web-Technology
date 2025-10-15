@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Toast and Tooltip</title>
+</head>
+<body>
+    
+    <div class="toast show ms-auto mt-3">
+        <div class="toast-header">
+            <strong>Boostrap</strong>
+            <div class="ms-auto"></div>
+            <small>5 mins</small>
+            <div class="btn-close" data-bs-dismiss="toast"></div>
+        </div>
+        <div class="toast-body">
+            Are you learning bootstrap?
+        </div>
+    </div>
+
+
+    <div id="trigger" class="btn btn-danger" data-bs-title="This button will open youtube">Open</div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            trigger = document.getElementById('trigger')
+            new bootstrap.Tooltip(trigger)
+        })
+    </script>
+
+<br><br>
+     <div id="trigger1" class="btn btn-primary" data-bs-title="This button will open youtube" data-bs-content="This is the content">Open</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            trigger = document.getElementById('trigger1')
+            new bootstrap.Popover(trigger)
+        })
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
